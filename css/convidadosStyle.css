@@ -1,0 +1,157 @@
+/* Importando tipografia Roboto do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Configurações gerais para todas as tags do body */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  /* Definindo imagem de fundo para tela de login */
+  background-image: url(../img/header/capa-1.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.login-container {
+  padding-top: 50px;  
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Configurações da div login: aplicando fundo transparente e centralizando as tags no card */
+.login{  
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10.0px);  
+  box-shadow: 12px 12px 12px 12px rgba(20, 20, 20, 0.3);
+  border-radius: 30px;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+}
+
+.logoForm {
+	color: white;
+	font-size: 35px;
+	line-height: 70px;
+	font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Configurando o form */
+form {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+input {
+  background: rgba(80, 80, 80, 0.3);
+  border: none;
+  border-radius: 10px;
+  margin-top: 5%;
+  color: white;
+  padding: 10px 20px;
+  width: 220px;
+}
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  /* Internet Explorer 10-11 */
+  :-ms-input-placeholder { 
+    color: white;
+}
+  /* Microsoft Edge */
+  ::-ms-input-placeholder { 
+    color: white;
+}
+
+/* Configurando o botão  */
+.btn_presenca {
+  padding: 10px 50px;
+  background-color: #FFFF00;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 4%;
+}
+
+/* Configurando o hover do botão */
+.btn_presenca:hover {
+  background-color: white;
+  color: #FFFF00;
+  transform: scale(1.1);
+}
+
+/* Criando animações utilizando o CSS3 Animation */
+
+/* Criando animação: Aparição suave */
+@keyframes fade {
+  /* Ação inicial da animação */
+  from {
+    opacity: 0;
+  }
+  /* Ação final da animação */
+  to { 
+    opacity: 1;
+  }
+}
+
+/* Aparição do form suavemente */
+/* Onde a animação será aplicada */
+.login {
+  animation-name: fade;
+  animation-duration: 900ms;
+}
+
+/* Criando animação: De movimento com aparição suave */
+@keyframes movendo{
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ /* Controlando a animação no primeiro input */  
+ form input:nth-child(1) {
+  animation-name: movendo;
+  animation-duration: 500ms;
+  animation-delay: 250 ms;
+}
+
+/* Controlando a animação no segundo input */  
+form input:nth-child(2) {
+  animation-name: movendo;
+  animation-duration: 500ms;
+  animation-delay: 800 ms;
+  animation-fill-mode: backwards;
+}
+

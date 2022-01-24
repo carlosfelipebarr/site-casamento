@@ -1,0 +1,94 @@
+/* -----------  Configurações do menu inicial: -----------
+Todas as configurações do menu do site  */
+nav {
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 45px;
+  cursor: pointer;
+  position: fixed;
+	z-index: 2;
+  }
+
+.barra {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+.menu {
+    display: none;
+    padding: 0;
+    transition: 0.3s ease;
+  }
+
+label.logo {
+	color: white !important;
+	font-size: 30px !important;
+	font-weight: bold !important;
+}
+
+.menu li {
+  padding: 8px 0;
+  list-style: none;
+}
+
+/* Cor das opções do menu */
+.menu li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* hover das opções do menu */
+.menu li a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.menu-bg {
+  z-index: 1;
+  background: #ffd700;
+  transition: 0.2s ease;
+  position: fixed;
+}
+  
+.change-bg {
+  width: 150px;
+  height: 580px;
+  transform: translate(-10%, -10%);
+}
+  
+/* Definições de cor do icone de fechar X do menu */
+.change .bar {
+  background-color: white;
+}
+  
+/* Tirando o terceirro elemento */
+.change #bar2 {
+  opacity: 0;
+}
+  
+.change {
+  display: block;
+}
+
+/* Efeito do icone de fechar X do menu */
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+/* Efeito do icone de fechar X do menu */
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+  
+/* Finalizando as configurações do menu */

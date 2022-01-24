@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin    : 0;
+}
+
+
+body {
+    font-family                              : 'Cormorant Garamond', serif;
+    background-image                         : url(../img/header/capa-1.jpg);
+    background-size                          : cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.convidado-container {
+    width          : 100vw;
+    height         : 100vh;
+    justify-content: center;
+    align-items    : center;
+    padding-top: 20px;
+}
+
+
+.convidado-presenca {
+    background                            : rgba(10, 10, 10, 0.5);
+    backdrop-filter                       : blur(10.0px);
+    box-shadow                            : 12px 12px 12px 12px rgba(20, 20, 20, 0.3);
+    border-radius                         : 30px;
+    text-align                            : center;
+    width                                 : 600px;
+    height                                : 500px;
+    margin: 0 auto;
+}
+
+.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 70px;
+	font-weight: bold;
+    padding-top: 10px;
+}
+
+h1, h3, p {
+    padding-bottom: 10px;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form button {
+    display: block;
+    margin: 15px auto;
+}
+
+.btn-salvar {
+    padding: 10px 50px;
+    background-color: #FFFF00;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2%;
+  }
+  
+.btn-salvar:hover {
+    background-color: white;
+    color: #FFFF00;
+    transform: scale(1.1);
+  }
+
+/* ------------- Criando animações utilizando o CSS3 Animation ------------- */
+
+/* Criando animação: Aparição suave */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.convidado-presenca {
+    animation    : fade 1.5s;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .convidado-container {
+        padding-top: 80px;
+    }
+    
+    .convidado-presenca {
+        width                                 : 450px;
+        height                                : 450px;
+    }  
+}

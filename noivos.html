@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noivos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/noivosStyle.css">
+    <!-- Menu CSS -->
+        <link rel="stylesheet" href="css/menuStyle.css">
+    <!-- Importando icones do font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div id="hambuguer" onclick="onClickMenu()">
+            <div id="bar1" class="barra"></div>
+            <div id="bar2" class="barra"></div>
+            <div id="bar3" class="barra"></div>
+        </div>
+
+        <ul class="menu" id="menu">
+            <label class="logo">A&D</label>
+            <li><a href="loginNoivos.html">Voltar</a></li>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#sessao-7">Lista de presentes</a></li>
+        </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+    <div class="convidado-container">
+        <div class="convidado-presenca">
+            <label class="logo">A&D</label>
+            <h1>Lista de convidados</h1>
+            <h3>Todos os que confirmaram presença!</h3>
+            <table class="convidados-plataforma">
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Telefone</th>
+                    <th>Confirmado</th>
+                </tr>
+                <tr th:each = "usuario : ${usuarios}">
+                    <td th:text = "${usuario.nome}"></td>
+                    <td th:text = "${usuario.email}"></td>
+                    <td></td>
+                    <td><i class="fas fa-check-square"></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+      <!-- JavaScript | Menu -->
+      <script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andressa & Daniel</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importando icones do font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
+    <!-- Menu CSS -->
+    <link rel="stylesheet" href="css/menustyle.css">
+</head>
+
+<body>
+    <nav>
+        <div id="hambuguer" onclick="onClickMenu()">
+            <div id="bar1" class="barra"></div>
+            <div id="bar2" class="barra"></div>
+            <div id="bar3" class="barra"></div>
+        </div>
+
+        <ul class="menu" id="menu">
+            <label class="logo">A&D</label>
+            <li><a class="btnMenu1" href="index.html#sessao-2">Festa</a></li>
+            <li><a class="btnMenu2" href="index.html#sessao-4">Levi</a></li>
+            <li><a class="btnMenu3" href="index.html#sessao-5">Quiz</a></li>
+            <li><a class="btnMenu4" href="index.html#sessao-7">Endereço</a></li>
+            <li><a class="btnMenu5" href="index.html#sessao-8">Contato</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="convidados.html">Convite</a></li>
+            <li><a href="convidados.html">Lista de presentes</a></li>
+        </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header>
+        <h1 class="tituloH1">Andressa & Daniel</h1>
+        <div class="container-data">
+            <div class="pincel-data">
+                <h2>05 de Fevereiro de 2022</h2>
+            </div>
+        </div>
+    </header>
+    <section class="sessao-2" id="sessao-2">
+        <div class="container-contagem">
+            <h2 class="tituloH2">Contagem regressiva para o grande dia</h2>
+            <ul>
+                <li><span id="dias"></span><br>Dias</li>
+                <li><span id="horas"></span><br>Horas</li>
+                <li><span id="minutos"></span><br>Minutos</li>
+                <li><span id="segundos"></span><br>Segundos</li>
+            </ul>
+        </div>
+        <div class="container-texto">
+            <h2>Sejam bem-vindos a nossa página!</h2>
+            <h3>A melhor forma de compartilhar a nossa alegria com vocês, é vivermos juntos esse grande sonho!</h3>
+            <img class="pintura" src="img/sessao2/pintura-sessao2.svg" alt="Textura de pintura">
+            <p>Reservamos esse espaço para contar à vocês, queridos amigos e familiares, os momentos mais marcantes da
+                nossa história. A contagem regressiva começa, o frio na barriga e toda a ansiedade do dia que tanto
+                sonhamos, nos enche de alegria em tê-los ao nosso lado. Vamos viver juntos esse grande marco, o dia em
+                que uniremos nossas almas e corpos para sempre, o dia em quê casaremos.</p>
+        </div>
+    </section>
+    <section class="sessao-3">
+        <div class="parallax-img1"></div>
+    </section>
+    <section class="sessao-4" id="sessao-4">
+        <h2 class="tituloH2">Levi</h2>
+        <p>Há poucos meses, tivemos uma abençoada surpresa, como sabem estamos grávidos! &#128171;<br>Nosso mundo mudou,
+            virou de
+            pernas pro ar. Em
+            um momento inésperado, já estavamos com alguns meses de gravidez sem sabermos. Esse é o nosso maior
+            presente, você Levi &#128152; &#128150;<br>Essa festa toda está só vai ser tão especial porque você está
+            aqui conosco,
+            estamos
+            muito ansiosos para sua chegada em nossos braços, para pegá-lo no coloco, para ouvir suas
+            gargalhadas. &#129409; &#129510; &#128525;<br><br>
+            Enquanto você não chega, ficamos aqui ouvindo o seu coração &#128153;</p>
+        <div class="video-container">
+            <div class="video-galeria">
+                <video src="video/levi.mp4" controls></video>
+            </div>
+        </div>
+        <div class="audio-container">
+            <br>
+            <h2>Coração</h2>
+            <p>"Na pruma leve das paixões que vem de dentro, tu vens chegando eu já escuto os teus sinas..."</p>
+            <img class="coracao-svg" src="img/coracao.svg" alt="Coração">
+            <audio src="som/coracaoLevi.mp3"></audio>
+            <button id="coracao-play"><i class="fas fa-play-circle"></i></button>
+        </div>
+    </section>
+    <section class="sessao-5" id="sessao-5">
+        <h2 class="titulo-quiz">Momento Quiz</h2>
+        <div class="container-perguntas">
+            <div id="progress_bar"></div>
+            <form class="questions_box">
+                <div id="questao-1">
+                    <h2 class="tituloH2">Questão 1</h2>
+                    <h3 class="tituloH3">Séries</h3>
+                    <input id="questao-1-a" type="radio" name="favelang" value=1>Emily em Paris<br>
+                    <input id="questao-1-b" type="radio" name="favelang" value=2>Euphoria<br>
+                    <input id="questao-1-c" type="radio" name="favelang" value=3>Rick And Morty<br>
+                    <div id="enviar1" class="enviar-resposta">Enviar Resposta</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="questao-2">
+                    <h2 class="tituloH2">Questão 2</h2>
+                    <h3 class="tituloH3">O que gostamos de fazer?</h3>
+                    <input id="questao-2-a" type="radio" name="favelang" value="1">Assistir netflix<br>
+                    <input id="questao-2-b" type="radio" name="favelang" value="2">Cozinhar<br>
+                    <input id="questao-2-c" type="radio" name="favelang" value="3">Sair com a galera<br>
+                    <div id="enviar2" class="enviar-resposta">Enviar Resposta</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="questao-3">
+                    <h2 class="tituloH2">Questão 3</h2>
+                    <h3 class="tituloH3">Rolê bom</h3>
+                    <input id="questao-3-a" type="radio" name="favelang" value="1">Japa<br>
+                    <input id="questao-3-b" type="radio" name="favelang" value="2">Beber<br>
+                    <input id="questao-3-c" type="radio" name="favelang" value="3">Praia<br>
+                    <div id="enviar3" class="enviar-resposta">Enviar Resposta</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="questao-4">
+                    <h2 class="tituloH2">Você concluiu nosso quiz, vamos conferir os seus pontos:</h2>
+                    <h3 class="tituloH3" id="pontosTotais"></h3>
+                    <h4 class="tituloH4" id="resultadosTotais"></h4>
+                </div>
+            </form>
+        </div>
+        <br><br>
+    </section>
+    <section class="sessao-6" id="sessao-6">
+        <div class="parallax-img2"></div>
+    </section>
+    <section class="sessao-7" id="sessao-7">
+        <h2 class="tituloH2">Onde vai ser a celebração?</h2>
+        <h3 class="tituloh3">Rua Coronel Ribeiro Gomes, 217 - São Conrado, RJ</h3>
+        <p>Referência: Rua da capelinha, entre o Supermercado Zona Sul e a Nissan</p>
+        <div class="container-localizacao">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7566467307283!2d-43.27173438560064!3d-22.995974546839598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd6b8e7749efb%3A0xab8ee54f37e42e6!2sR.%20Cel.%20Ribeiro%20Gomes%2C%20217%20-%20S%C3%A3o%20Conrado%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022610-240!5e0!3m2!1sen!2sbr!4v1642716920453!5m2!1sen!2sbr"
+                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section class="sessao-8" id="sessao-8">
+        <h2 class="titulo-contato">Qualquer dúvida fale com a gente!</h2>
+        <ul class="social-icons">
+            <li>Andressa WhatsApp<br><br><a href="https://api.whatsapp.com/send?phone=5521969202277" target="_black"
+                    rel='external nofollow'><i class="fab fa-whatsapp"></i></a></li>
+            <li>Andressa Instagram<br><br><a href="https://www.instagram.com/andressa_barr/" target="_black"
+                    rel='external nofollow'><i class="fab fa-instagram"></i></a></li>
+            <li>Daniel WhatsApp<br><br><a href="https://api.whatsapp.com/send?phone=5521979044786" target="_black"
+                    rel='external nofollow'><i class="fab fa-whatsapp"></i></a></li>
+            <li>Daniel Instagram<br><br><a href="https://www.instagram.com/daniellouchard/" target="_black"
+                    rel='external nofollow'><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <button onclick="topFunction()" id="btn-top" title="Volte ao topo"><i class="fas fa-arrow-up"></i></button>
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <p class="copyright">Copyright &copy;2022 || FB Soluções</p>
+    </footer>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>   
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

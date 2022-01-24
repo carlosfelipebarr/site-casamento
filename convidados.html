@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convidados</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/convidadosStyle.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" href="css/menuStyle.css">
+    <!-- Importando icones do font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="hambuguer" onclick="onClickMenu()">
+            <div id="bar1" class="barra"></div>
+            <div id="bar2" class="barra"></div>
+            <div id="bar3" class="barra"></div>
+        </div>
+
+        <ul class="menu" id="menu">
+            <label class="logo">A&D</label>
+            <li><a href="index.html">Voltar</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#sessao-7">Endereço</a></li>
+            <li><a href="index.html#sessao-7">Lista de presentes</a></li>
+            <li><a href="loginNoivos.html">Noivos</a></li>
+        </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+    <div class="login-container">
+        <div class="login">
+            <label class="logoForm">A&D</label>
+            <h1>Convidados</h1>
+            <p>Para confirmar sua presença, digite os dados abaixos</p>
+            <form name="formLoginVoluntario">
+                <input name="primeiroNome" type="text" placeholder="Nome" required />
+                <input name="segundoNome" type="text" placeholder="Sobrenome" required />
+                <input name="telefone" type="tel" placeholder="(00) 0 0000-0000" required />
+                <button class="btn_presenca" type="submit">Presença</button>
+            </form>
+        </div>
+    </div>
+    <!-- JavaScript | Menu -->
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
+</html>

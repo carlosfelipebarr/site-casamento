@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Convidado</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/confirmacaoStyle.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" href="css/menuStyle.css">
+    <!-- Importando icones do font Awesome para o projeto -->
+    <script src="https://kit.fontawesome.com/3b7e70bcc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div id="hambuguer" onclick="onClickMenu()">
+            <div id="bar1" class="barra"></div>
+            <div id="bar2" class="barra"></div>
+            <div id="bar3" class="barra"></div>
+        </div>
+
+        <ul class="menu" id="menu">
+            <label class="logo">A&D</label>
+            <li><a href="convidados.html">Voltar</a></li>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html#sessao-7">Endereço</a></li>
+            <li><a href="index.html#sessao-7">Lista de presentes</a></li>
+        </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+    <div class="convidado-container">
+        <div class="convidado-presenca">
+            <label class="logo">A&D</label>
+            <h1>Convidado</h1>
+            <h3>Estamos muito felizes em convidar você para nossa festa!</h3>
+            <p>Dia 05 de Feveiro de 2022</p>
+            <p>18:00h<br>Rua Coronel Ribeiro Gomes, 217 - São Conrado, RJ</p>
+            <form>
+                <label>Eu vou!! &#128165; </label>   
+                <input type="radio" name="checkPresenca" id="check" value="1">
+                <br>
+                <label>Não poderei ir &#128557;</label>   
+                <input type="radio" name="checkPresenca" id="check" value="1">
+                <button class="btn-salvar">Salvar</button>
+            </form>
+        </div>
+    </div>
+      <!-- JavaScript | Menu -->
+      <script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

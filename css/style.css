@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.tituloH1, .tituloH2, .tituloH3, .tituloH4 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+    position             : static;
+    height               : 100%;
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/header/capa-1.jpg);
+}
+
+.tituloH1 {
+    font-size     : 80px;
+    text-align    : center;
+    color         : white;
+    padding-top   : 200px;
+    text-shadow: 5px 5px black;
+}
+
+.container-data {
+    text-align     : center;
+    justify-content: center;
+}
+
+.pincel-data {
+    background-image : url(../img/header/pintura.svg);
+    background-repeat: no-repeat;
+    width            : 400px;
+    padding-bottom   : 400px;
+    margin           : 0 auto;
+}
+
+.pincel-data h2 {
+    padding-top: 20px;
+    color      : white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.sessao-2 {
+    text-align: center;
+}
+
+.container-contagem h2 {
+    padding-top   : 80px;
+    padding-bottom: 25px;
+    color         : #ffd700;
+    font-size     : 40px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container-contagem li {
+    display  : inline-block;
+    padding  : 50px;
+    font-size: 35px;
+    
+}
+
+.container-contagem span {
+    color: #ffd700;
+}
+
+.container-texto h2 {
+    padding-top   : 120px;
+    padding-bottom: 100px;
+    font-size     : 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container-texto h3 {
+    padding-bottom: 100px;
+    font-size     : 25px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.pintura {
+    height: 20px;
+}
+
+.container-texto p {
+    padding-top   : 120px;
+    font-size     : 25px;
+    width         : 80%;
+    margin        : 0 auto;
+    padding-bottom: 100px;
+}
+
+.sessao-3 {
+    height: 100vh;
+}
+
+.parallax-img1 {
+    height               : 90%;
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/parallax/capa-2.jpg);
+}
+
+/* Sessao-4 */
+.sessao-4 {
+    text-align: center;
+    height: 75rem;
+}
+
+.sessao-4 h2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.sessao-4 p {
+    font-size     : 25px;
+    width         : 80%;
+    margin        : 0 auto;
+    padding-bottom: 30px;
+}
+
+/* Configurando a div container da galeria de video, tamanho, posicionamento das miniaturas de video */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 10px;
+}
+  
+/* Configurando o tamanho da miniatura do video e da borda que o contorna */
+.video-container .video-galeria {
+    width: 35rem;
+    height: 20rem;
+    box-shadow: 3px 3px 3px 3px black;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+/* Configurando a exibição do video dentro da miniatura */
+.video-container .video-galeria video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+  
+/* Configurando efeito hover de ampliação ao passar o mouse em cima de uma miniatura do video */
+.video-container .video-galeria:hover video{
+    transform: scale(1.02);
+}
+
+.coracao-svg {
+    height: 120px;
+    width: 120px;
+}
+
+.audio-container h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#coracao-play {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ffd700;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}
+
+#coracao-play:hover {
+    color: black;
+}
+
+.fa-play-circle {
+    font-size: 40px;
+}
+
+/* -------- Sessao-5  -------- */
+.sessao-5 {
+    text-align: center;
+}
+
+.titulo-quiz {
+    font-size: 40px;
+}
+
+.container-perguntas {
+    width    : 80%;
+    margin   : 0 auto;
+    padding  : 0 20px;
+}
+
+.questions_box {
+    background-color: #ffffff;
+    padding         : 10px;
+    text-align      : center;
+}
+
+.questions_box h2, h3 {
+    padding-bottom: 10px;
+}
+
+.enviar-resposta {
+    cursor                : pointer;
+    width:  50%;
+    margin: 0 auto;
+    font-size             : 20px;
+    border                : none;
+    padding               : 10px 15px;
+    border-radius         : 3px;
+    background            : #ffd700;
+    color                 : white;
+    text-decoration       : none;
+    transition            : background-color 200ms ease-in-out;
+}
+
+.enviar-resposta:hover {
+    background-color: green;
+    color           : white;
+}
+
+#questao-2,
+#questao-3,
+#questao-4 {
+    display: none;
+}
+
+#progress_bar {
+    background-color: #ffd700;
+    width           : 20%;
+    height          : 10px;
+    transition      : all 100ms ease-in-out;
+}
+
+/* Sessao-6 */
+.sessao-6 {
+    height: 100vh;
+}
+
+.parallax-img2 {
+    height               : 90%;
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/parallax/capa-3.jpg);
+}
+
+
+/* -------- Sessao-7 -------- */
+.sessao-7 {
+    height: 35rem;
+    text-align: center;
+}
+
+.sessao-7 h2 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.sessao-7 h3 {
+    font-size: 25px;
+}
+
+.sessao-7 p {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.container-localizacao {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -------- Sessao-8 -------- */
+
+.sessao-8 {
+    text-align: center;
+    height: 30rem;
+}
+
+.titulo-contato {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+/* Margem dos icones sociais | Alimento ao centro */
+.social-icons {
+    margin-top: 1rem;
+    align-content: center;
+}
+  
+/* Posição lado a lado dos icones sociais  */
+.social-icons li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+  
+/* Controle dos icones sociais */
+.social-icons a {
+    background-color: #ffd700;
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-size: 60px;
+    display: inline-block;
+    line-height: 120px;
+    text-align: center;
+    border-radius: 20%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+  
+/* Hover dos icones sociais */
+.social-icons a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Criando o style do botão de voltar ao topo */
+#btn-top {
+  background-color: #ffd700;
+  border-radius: 20%;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  bottom: 10px;
+  right: 20px;
+  z-index: 2;
+  display: none;
+  position: fixed;
+}
+
+#btn-top:hover {
+  transform: scale(1.2);
+  transition: 150ms;
+}
+
+button .fa-arrow-up {
+  color: white;
+}
+
+/* -------- Rodapé --------  */
+.rodape {
+	background-color: rgb(65, 65, 65);
+    height: 3rem;
+    font-size: 15px;
+	color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Configuração da classe do copyright  */
+.copyright {
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 890px) {
+    #sessao-4 {
+        height: 90rem;
+    }
+
+
+.sessao-8 {
+        text-align: center;
+        height: 30rem;
+}
+   
+    
+
+    /* Margem dos icones sociais | Alimento ao centro */
+.social-icons {
+    margin-top: 1rem;
+    align-content: center;
+}
+  
+/* Posição lado a lado dos icones sociais  */
+.social-icons li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+  
+/* Controle dos icones sociais */
+.social-icons a {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    border-radius: 20%;
+}
+
+}

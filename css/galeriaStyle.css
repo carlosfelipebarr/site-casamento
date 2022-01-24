@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.tituloH1 {
+    text-shadow: 5px 5px black;
+}
+
+
+.tituloH1, .tituloH2, .tituloH3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#menu ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+header {
+    position             : static !important;
+    height               : 20rem;
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/header/capa-1.jpg);
+}
+
+
+.tituloH1 {
+    font-size     : 80px;
+    text-align    : center;
+    color         : white;
+    padding-top   : 120px !important;
+}
+
+#sessao-galeria {
+    padding-top: 10px !important;
+    width: 80%;
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+/* Sessao-6 */
+.sessao-2 {
+    height: 100vh;
+}
+
+.parallax-img {
+    height               : 90%;
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/parallax/capa-4.jpg);
+    background-position: center;
+}
+
+
+  /* -------- Rodapé --------  */
+  .rodape {
+      background-color: rgb(65, 65, 65);
+      height: 3rem;
+      font-size: 15px;
+      color: white;
+      text-align: center;
+      flex-shrink: 0;
+  }
+  
+  .direitos {
+      padding-top: 1rem !important;
+  }
+ 
