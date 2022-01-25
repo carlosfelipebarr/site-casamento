@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.tituloH1, .tituloH2, .tituloH3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#menu ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+header {
+    position             : static !important;
+    height               : 32rem;
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : url(../img/parallax/capa-2.jpg);
+    text-align: center;
+}
+
+.tituloH1 {
+    font-size     : 80px;
+    text-align    : center;
+    color         : white;
+    padding-top   : 120px !important;
+    text-shadow: 5px 5px black;
+}
+
+header p {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 3px 3px black;
+    
+}
+
+.sessao-galeria {
+    margin-top: 25px;
+}
+
+/*  Configurações das tag <p> */
+.sessao-galeria p {
+    font-size: 20px;
+}
+  
+.produto-imagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+      text-align: center;
+}
+  
+.produto h2 {
+    font-size: 20px;
+}
+  
+.produto p {
+    font-size: 15px;
+}
+  
+.produto a {
+    color: white;
+    background-color: rgba(70, 70, 70, 0.9662);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 15px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  
+.produto a:hover {
+    color: white;
+    background-color: #ffd700;
+}
+  
+  /* Configurando div responsavél pela galeria de imagens */
+.imagem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 35px;
+}
+  
+/* Configurando as imagens */
+.imagem-galeria {
+    width: 10rem;
+    height: 8rem;
+}
+  
+.imagem-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------- Rodapé --------  */
+.rodape {
+    background-color: rgb(65, 65, 65);
+    height: 3rem;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+  
+.direitos {
+    padding-top: 1rem !important;
+}
+ 
