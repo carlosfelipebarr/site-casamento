@@ -105,8 +105,8 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 15px;
-    padding: 35px;
+    gap: 25px;
+    padding: 50px;
 }
   
 /* Configurando as imagens */
