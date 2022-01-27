@@ -55,21 +55,52 @@ header p {
 
 .sessao-galeria {
     margin-top: 25px;
+    display: inline-flex;
 }
 
 /*  Configurações das tag <p> */
 .sessao-galeria p {
     font-size: 20px;
 }
-  
-.produto-imagem {
+
+.itens-compras {
+    display: flex;
+    text-align: center;
+}
+
+.todos-produtos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.google-form {  
+    width: 100%;
+    text-align: center;
+}
+
+.confirmacao{
+    width: 50%;
+    margin: 0 auto;
+}
+  
+.produto-imagem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 10px;
+}
+
+.card-1 {
+      width: 100%;
+      text-align: center;
+      margin-left: auto;  
+      margin-right: auto;
 }
 
 .produto {
-      text-align: center;
+    text-align: center;
 }
   
 .produto h2 {
@@ -102,9 +133,8 @@ header p {
   
   /* Configurando div responsavél pela galeria de imagens */
 .imagem-container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 25px;
     padding: 50px;
 }
@@ -144,6 +174,8 @@ header p {
 button .fa-arrow-up {
     color: white;
 }
+
+
 
 /* -------- Rodapé --------  */
 .rodape {

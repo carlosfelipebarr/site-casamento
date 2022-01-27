@@ -117,7 +117,7 @@ header {
 
 .parallax-img1 {
     height               : 90%;
-    background-attachment: fixed;
+    background-attachment: initial;
     background-repeat    : no-repeat;
     background-size      : cover;
     background-image     : url(../img/parallax/capa-2.jpg);
@@ -269,7 +269,7 @@ h3 {
 
 .parallax-img2 {
     height               : 90%;
-    background-attachment: fixed;
+    background-attachment: initial;
     background-repeat    : no-repeat;
     background-size      : cover;
     background-image     : url(../img/parallax/capa-3.jpg);
@@ -415,7 +415,6 @@ button .fa-arrow-up {
     .parallax-img1 {
         height             : 80%;
         background-position: 40%;
-        background-attachment: initial;
     }
 
 
@@ -473,7 +472,7 @@ button .fa-arrow-up {
     .parallax-img2 {
         height             : 80%;
         background-position: 50%;
-        background-attachment: initial;
+        background-attachment: initial; 
 
     }
 
@@ -487,19 +486,4 @@ button .fa-arrow-up {
         height        : auto;
         padding-bottom: 100px;
     }
-}
-
-@media (min-width:481px) {
-
-
- }
-
- /*-------- iPads (portrait and landscape) --------*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-.parallax-img1, .parallax-img2 {
-    background-attachment: initial;
-}
-
 }
